@@ -1,0 +1,29 @@
+{
+  "name": "superflights-microservices",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev:gateway": "cd api-gateway && npm run start:dev",
+    "dev:user": "cd microservice-user && npm run start:dev",
+    "dev:passengers": "cd microservice-passengers && npm run start:dev",
+    "dev:flights": "cd microservice-flights && npm run start:dev",
+    "start:gateway": "cd api-gateway && npm run start",
+    "start:user": "cd microservice-user && npm run start",
+    "start:passengers": "cd microservice-passengers && npm run start",
+    "start:flights": "cd microservice-flights && npm run start",
+    "dev:all": "concurrently --kill-others --names \"gateway\",\"users\",\"passengers\",\"flights\" \"npm run dev:gateway\" \"npm run dev:user\" \"npm run dev:passengers\" \"npm run dev:flights\"",
+    "start:all": "concurrently --kill-others \"npm run start:gateway\" \"npm run start:user\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^9.1.2", 
+    "eslint": "^9.18.0",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-prettier": "^5.2.2",
+    "prettier": "^3.4.2",
+    "typescript-eslint": "^8.20.0"
+  }
+}
