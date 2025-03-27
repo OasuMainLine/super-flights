@@ -1,4 +1,4 @@
-<a align="center" href="https://cdnlogo.com/logo/nestjs_134112.html" width="128"><img src="https://static.cdnlogo.com/logos/n/57/nestjs.svg"></a>
+<a align="center" href="https://cdnlogo.com/logo/nestjs_134112.html"><img src="https://static.cdnlogo.com/logos/n/57/nestjs.svg" width="128"></a>
 <h1>SuperFlights - Microservices - NestJS</h1>
 
 ## Introduction
